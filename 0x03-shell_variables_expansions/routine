@@ -8,5 +8,5 @@ touch $filename
 chmod u+x $filename
 $firstline = "\#!/bin/bash"
 echo $firstline > $filename
-echo $command > $filename
+echo $command >> $filename
 nano $filename
