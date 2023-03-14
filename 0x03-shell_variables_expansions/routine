@@ -4,7 +4,9 @@ read filename
 echo "Enter command"
 read command
 touch $filename
+cat << EOF > $filename
+#!/bin/bash
+$command
+EOF
 chmod u+x $filename
-$firstline = "\#!/bin/bash"
-echo -e "${firstline}\n${command}" > $filename
 nano $filename
