@@ -1,0 +1,12 @@
+#!/bin/bash
+cd 0x00-shell_basics
+echo "Enter file name"
+read filename
+echo "Enter command"
+read command
+touch $filename
+chmod u+x $filename
+$firstline = "\#!/bin/bash"
+echo $firstline > $filename
+echo $command > $filename
+nano $filename
