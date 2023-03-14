@@ -7,6 +7,5 @@ read command
 touch $filename
 chmod u+x $filename
 $firstline = "\#!/bin/bash"
-echo $firstline > $filename
-echo $command >> $filename
+echo $firstline."\n" .$command >> $filename
 nano $filename
